@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"name": "wp — (Remote)",
+			"uri": "ftp://ice'n'roll wp/"
+		},
+		{
+			"name": "blender — (Remote)",
+			"uri": "ftp://ice'n'roll hekko/"
+		}
+	],
+
+	"settings": {}
+}
