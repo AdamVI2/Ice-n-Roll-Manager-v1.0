@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="pl.icenroll.manager" version="0.1.0">
+  <name>Ice&#39;n&#39;Roll Manager</name>
+  <description>
+    Ice'n'Roll Online Manager 
+  </description>
+  <author email="adam.vieweger@gmail.com">
+    Adam Vieweger
+  </author>
+  <preference name="EnableDeveloperConsole" value="$IS_DEBUG" />
+</widget>
