@@ -26,11 +26,10 @@ import {TextView} from 'tabris';
 import {ToggleButton} from 'tabris'; 
 
 navigationBar.displayMode = 'hide'; 
-statusBar.background = '#0071DB';
 let activityIndicator = {};
 
 contentView.append(
-  <NavigationView stretch toolbarColor='#0071DB'>
+  <NavigationView stretch>
     <Action placement='default' title=''/>
     <Page title="Ice'n'Roll Manager"  padding={8} background='#fafafa'>
       <ScrollView top={0} bottom={0} stretchX>
