@@ -28,7 +28,7 @@ navigationBar.displayMode = 'hide';
 let activityIndicator = {};
 
 contentView.append(
-  <NavigationView stretch>
+  <NavigationView stretch background='#0071DB'>
     <Action placement='default' title=''/>
     <Page title="Ice'n'Roll Manager"  padding={8} background='#fafafa'>
       <ScrollView top={0} bottom={0} stretchX>
