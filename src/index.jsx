@@ -19,12 +19,14 @@ import {Row} from 'tabris';
 import {ScrollView} from 'tabris';
 import {Stack} from 'tabris';
 import {StackLayout} from 'tabris';
+import {statusBar} from 'tabris';
 import {Switch} from 'tabris';
 import {TextInput} from 'tabris'; 
 import {TextView} from 'tabris';
 import {ToggleButton} from 'tabris'; 
 
 navigationBar.displayMode = 'hide'; 
+statusBar.background = '#0071DB';
 let activityIndicator = {};
 
 contentView.append(
