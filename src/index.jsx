@@ -36,25 +36,25 @@ contentView.append(
         
         <Composite stretchX left right='50%' height={150} padding={5} elevation={4}>
           <Composite stretch highlightOnTouch background='#fff' onTap={orderManager} cornerRadius={24} padding={20}>
-            <ImageView center image='resources/icons8-shopping-cart-50-blue.png' onTap={orderManager}/>
+            <ImageView center image='resources/icons8-shopping-cart-50-blue.png' width={50} height={50} onTap={orderManager}/>
             <TextView centerX top='prev()'>Zamówienia</TextView>
           </Composite> 
         </Composite>
         <Composite stretchX left='50%' right={0} height={150} padding={5}>
           <Composite stretch highlightOnTouch background='#fff' cornerRadius={24} padding={20} onTap={deliveryManager}>
-            <ImageView center image='resources/icons8-truck-50-blue.png' onTap={deliveryManager}/>
+            <ImageView center image='resources/icons8-truck-50-blue.png' width={50} height={50} onTap={deliveryManager}/>
             <TextView centerX top='prev()'>Dostawa</TextView>
           </Composite>
         </Composite>
         <Composite top='prev()' stretchX left right='50%' height={150} padding={5}>
           <Composite stretch highlightOnTouch background='#fff' onTap={menuManager} cornerRadius={24} padding={20}>
-            <ImageView center image='resources/icons8-restaurant-menu-50-blue.png' onTap={menuManager}/>
+            <ImageView center image='resources/icons8-restaurant-menu-50-blue.png' width={50} height={50} onTap={menuManager}/>
             <TextView centerX top='prev()'>Menu</TextView>
           </Composite> 
         </Composite>
         <Composite top={150} stretchX left='50%' right={0} height={150} padding={5}>
           <Composite stretch highlightOnTouch background='#fff' onTap={productManager} cornerRadius={24} padding={20}>
-            <ImageView center image='resources/icons8-grocery-store-50-blue.png' onTap={productManager}/>
+            <ImageView center image='resources/icons8-grocery-store-50-blue.png' width={50} height={50} onTap={productManager}/>
             <TextView centerX top='prev()'>Magazyn</TextView>
           </Composite>
         </Composite>
@@ -336,16 +336,16 @@ async function showOrderPopover(event, order_id) {
               <TextView alignment='left' top='prev() 3' markupEnabled lineSpacing={1.2}>{data.address_1}{address_2}</TextView>
               <TextView alignment='left' top='prev() 3'>{data.postcode}, {data.city}</TextView>
               <TextView alignment='right' bottom={5} right={35} font='bold 16px' stretchX textColor='#a8a8a8'>Adres dostawy</TextView>
-              <ImageView image='resources/icons8-ok-30.png' bottom={0} right={0}></ImageView>
-              <ImageView image='resources/icons8-google-maps-48.png' top={0} right={0} onTap={ev => launchMaps(ev, googleMapsURL)}></ImageView>
+              <ImageView image='resources/icons8-ok-30.png' bottom={0} right={0} width={30} height={30}></ImageView>
+              <ImageView image='resources/icons8-google-maps-48.png' top={0} right={0} width={30} height={30} onTap={ev => launchMaps(ev, googleMapsURL)}></ImageView>
             </Composite>
             <Composite stretchX padding={16} top='prev() 20' left={20} right={20} height={90} background='#fff' elevation={4} cornerRadius={6} onTap={ev => callNum(ev, data.phone)}>
-              <ImageView image='resources/icons8-email-20.png' left={0}></ImageView>
+              <ImageView image='resources/icons8-email-20.png' left={0} width={20} height={20}></ImageView>
               <TextView alignment='left' top={0} left='prev() 5'>{data.email}</TextView>
-              <ImageView image='resources/icons8-phone-20-glyph.png' top='prev() 15' left={0} onTap={ev => callNum(ev, data.phone)}></ImageView>
+              <ImageView image='resources/icons8-phone-20-glyph.png' top='prev() 15' left={0} width={20} height={20} onTap={ev => callNum(ev, data.phone)}></ImageView>
               <TextView alignment='left' left='25' top={35} onTap={ev => callNum(ev, data.phone)}>{data.phone}</TextView>
               <TextView alignment='right' bottom={3} right={35} font='bold 16px' stretchX textColor='#a8a8a8'>Kontakt</TextView>
-              <ImageView image='resources/icons8-ok-30.png' bottom={0} right={0}></ImageView>
+              <ImageView image='resources/icons8-ok-30.png' bottom={0} right={0} width={30} height={30} ></ImageView>
             </Composite>
             
             <Composite height={itemsScrollHeight} stretchX top='prev()'>
@@ -503,8 +503,8 @@ async function productManager(){
         <Composite height={64} stretchX centerY>
           <TextView id='flavourName' centerY left={0} right='40%'>{products[i].flavour_name}</TextView>
           <TextView id='quantity' centerY right={50} width={30} alignment='centerX'>{products[i].quantity}</TextView>
-          <ImageView id='imgMinus' centerY image='resources/icons8-minus-40.png' right={80} onTap={ev => decreaseQuantity(ev, idx, i)} tintColor={tintColor}></ImageView>
-          <ImageView centerY image='resources/icons8-plus-40.png' right={10} onTap={ev => increaseQuantity(ev, idx, i)}></ImageView>
+          <ImageView id='imgMinus' centerY image='resources/icons8-minus-40.png' right={80} width={40} height={40} onTap={ev => decreaseQuantity(ev, idx, i)} tintColor={tintColor}></ImageView>
+          <ImageView centerY image='resources/icons8-plus-40.png' right={10} width={40} height={40} onTap={ev => increaseQuantity(ev, idx, i)}></ImageView>
         </Composite>
         <Composite stretchX height={1} background='#e0e0e0'></Composite>
       </Composite>
